@@ -15,7 +15,7 @@ RUN mkdir example_browserclient
 COPY example_browserclient/server.py /app/example_browserclient/server.py
 COPY RealtimeSTT /app/RealtimeSTT
 
-EXPOSE 9001
+EXPOSE 8001
 ENV PYTHONPATH "${PYTHONPATH}:/app"
 RUN export PYTHONPATH="${PYTHONPATH}:/app"
 CMD ["python3", "example_browserclient/server.py"]
